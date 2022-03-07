@@ -1,9 +1,18 @@
 {
 	"name": "mintable-erc20-dapp",
 	"version": "1.0.0",
+	"pricate": true,
 	"description": "",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"node": "npm run node --workspace=hardhat",
+		"test-hardhat": "npm run test --workspace=hardhat",
+		"compile-share-deploy": "npm run compile --workspace=hardhat && npm run share --workspace=hardhat && npm run deploy --workspace=hardhat",
+		"mint": "npm run mint --workspace=hardhat",
+		"start-app": "npm start --workspace=react-app",
+		"test-app": "npm run test --workspace=react-app",
+		"type-check": "npm run type-check --workspaces",
+		"format": "npm run format --workspaces",
+		"lint": "npm run lint --workspaces"
 	},
 	"repository": {
 		"type": "git",
