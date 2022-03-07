@@ -1,4 +1,6 @@
-import { Box, Flex } from '@chakra-ui/layout';
+import { Box, Flex, VStack } from '@chakra-ui/layout';
+import Balance from 'components/Balance';
+import ConnectEthereum from 'components/ConnectEthereum';
 import Header from 'components/Header';
 import { useContractContext } from 'context/ContractContext';
 import { useAccountAndChainChange } from 'utils/hooks';
@@ -10,6 +12,13 @@ const App = () => {
     <Box textAlign="center" fontSize="xl">
       <Flex flexDirection="column" minH="100vh" p={3}>
         <Header />
+        {ctxtAccount && ctxtReadContract && ctxtWriteContract ? (
+          <VStack spacing={8} marginTop="10" alignItems="center">
+            <Balance />
+          </VStack>
+        ) : (
+          <ConnectEthereum />
+        )}
       </Flex>
     </Box>
   );

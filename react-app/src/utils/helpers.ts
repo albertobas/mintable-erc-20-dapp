@@ -21,3 +21,8 @@ export const fetchData = async () => {
 
   return { accounts, contract, signerContract };
 };
+
+export const formatAmount = (amount: BigNumber, decimals?: number) => {
+  const formattedAmount = parseFloat(ethers.utils.formatEther(amount));
+  return formattedAmount.toFixed(decimals ? decimals : 4);
+};
