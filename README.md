@@ -28,7 +28,7 @@ I use [npm 7 workspaces](https://docs.npmjs.com/cli/v7/using-npm/workspaces "npm
 ## Running locally
 
 ```bash
-$ git clone https://github.com/albertobas/mintable-erc20-dapp.com.git
+$ git clone https://github.com/albertobas/mintable-erc20-dapp.git
 $ cd mintable-erc20-dapp
 $ npm i
 $ npm run node
