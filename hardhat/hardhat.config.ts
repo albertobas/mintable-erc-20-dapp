@@ -2,6 +2,7 @@ import { HardhatUserConfig } from 'hardhat/types';
 import '@typechain/hardhat';
 import '@nomiclabs/hardhat-ethers';
 import '@nomiclabs/hardhat-waffle';
+require('./tasks/mint');
 
 const config: HardhatUserConfig = {
   solidity: '0.8.4',
