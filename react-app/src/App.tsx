@@ -4,7 +4,7 @@ import ConnectEthereum from 'components/ConnectEthereum';
 import Header from 'components/Header';
 import Panels from 'components/Panels';
 import TransactionForm from 'components/TransactionForm';
-import { useContractContext } from 'context/ContractContext';
+import { useContractContext } from 'utils/context/ContractContext';
 import { useAccountAndChainChange } from 'utils/hooks';
 
 const App = () => {

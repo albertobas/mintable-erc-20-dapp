@@ -1,6 +1,6 @@
 import { Button } from '@chakra-ui/button';
 import { Flex } from '@chakra-ui/layout';
-import { useContractContext } from 'context/ContractContext';
+import { useContractContext } from 'utils/context/ContractContext';
 import { isEthereum, fetchData } from 'utils/helpers';
 
 const ConnectEthereum = () => {

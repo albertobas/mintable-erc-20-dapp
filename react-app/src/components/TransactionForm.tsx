@@ -1,4 +1,4 @@
-import { useContractContext } from 'context/ContractContext';
+import { useContractContext } from 'utils/context/ContractContext';
 import { useBalance } from 'utils/hooks';
 import { Button } from '@chakra-ui/button';
 import { FormControl, FormErrorMessage, FormLabel } from '@chakra-ui/form-control';
