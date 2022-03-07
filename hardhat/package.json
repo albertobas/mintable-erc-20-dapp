@@ -14,15 +14,6 @@
     "format": "prettier --write .",
     "lint": "eslint . --ext ts --ext tsx --ext js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/albertobas/mintable-erc20-dapp.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/albertobas/mintable-erc20-dapp/issues"
-  },
-  "homepage": "https://github.com/albertobas/mintable-erc20-dapp#readme",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
