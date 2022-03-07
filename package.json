@@ -1,0 +1,22 @@
+{
+	"name": "mintable-erc20-dapp",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/albertobas/mintable-erc20-dapp.git"
+	},
+	"keywords": [],
+	"author": "",
+	"bugs": {
+		"url": "https://github.com/albertobas/mintable-erc20-dapp/issues"
+	},
+	"homepage": "https://github.com/albertobas/mintable-erc20-dapp#readme",
+	"workspaces": [
+		"hardhat",
+		"react-app"
+	]
+}
