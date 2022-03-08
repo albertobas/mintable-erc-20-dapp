@@ -12,7 +12,7 @@ interface IInitialValues {
   amount: string;
 }
 
-const TransactionForm = () => {
+const TransferForm = () => {
   const balance = useBalance();
   const { ctxtWriteContract, ctxtAccount } = useContractContext();
   const initialValues: IInitialValues = { recipient: '', amount: '' };
@@ -95,4 +95,4 @@ const TransactionForm = () => {
   );
 };
 
-export default TransactionForm;
+export default TransferForm;

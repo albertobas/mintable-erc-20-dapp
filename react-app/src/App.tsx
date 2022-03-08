@@ -3,7 +3,7 @@ import Balance from 'components/Balance';
 import ConnectEthereum from 'components/ConnectEthereum';
 import Header from 'components/Header';
 import Panels from 'components/Panels';
-import TransactionForm from 'components/TransactionForm';
+import TransferForm from 'components/TransferForm';
 import { useContractContext } from 'utils/context/ContractContext';
 import { useAccountAndChainChange } from 'utils/hooks';
 
@@ -17,7 +17,7 @@ const App = () => {
         {ctxtAccount && ctxtReadContract && ctxtWriteContract ? (
           <VStack spacing={8} marginTop="10" alignItems="center">
             <Balance />
-            <TransactionForm />
+            <TransferForm />
             <Panels />
           </VStack>
         ) : (
