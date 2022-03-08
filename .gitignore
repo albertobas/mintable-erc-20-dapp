@@ -25,6 +25,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # shared files
-react-app/src/utils/contracts
+react-app/src/utils/contracts/
 react-app/src/utils/types/common.ts
 react-app/src/utils/types/MintableERC20.ts
