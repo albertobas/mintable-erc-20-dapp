@@ -1,4 +1,4 @@
-import { useContractContext } from 'context/ContractContext';
+import { useContractContext } from 'utils/context/ContractContext';
 import { BigNumber, Event, EventFilter } from 'ethers';
 import { useCallback, useEffect, useState } from 'react';
 
