@@ -22,7 +22,7 @@ I use [npm 7 workspaces](https://docs.npmjs.com/cli/v7/using-npm/workspaces "npm
 - `hardhat/contracts/*`: smart contract written in Solidity language.
 - `hardhat/scripts/*`: Typescript files to deploy contracts, and to share files from the Hardhat workspace to the React app workspace.
 - `hardhat/tasks/*`: Hardhat task to mint a prespecified amount of tokens and send them to a scpecified address.
-- `hardhat/test/*`: Typescript file using a [hardhat plugin for integration with Waffle](https://hardhat.org/plugins/nomiclabs-hardhat-waffle.html) to write the required tests with [mocha](https://mochajs.org/) alongside [chai](https://www.chaijs.com/).
+- `hardhat/test/*`: Typescript file using a hardhat plugin for integration with [Waffle](https://hardhat.org/plugins/nomiclabs-hardhat-waffle.html) and [Ethers.js](https://hardhat.org/plugins/nomiclabs-hardhat-ethers.html) to write the required tests with [mocha](https://mochajs.org/) alongside [chai](https://www.chaijs.com/)
 - `react-app/public/*`: `index.html`, `manifest.json` and `robots.txt`.
 - `react-app/src/components/*`: React.js components in `.tsx`.
 - `react-app/src/utils/*`: helper functions, interfaces, hooks and a context.
