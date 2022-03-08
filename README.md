@@ -34,4 +34,7 @@ $ npm i
 $ npm run node
 $ npm run compile-share-deploy
 $ npm run start-app
+$ npm run mint --receiver 0x...
 ```
+
+`0x...` stands for the address of the receiver account
