@@ -24,5 +24,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# contract address
-contracts-addresses.json
+# shared files
+react-app/src/utils/contracts
+react-app/src/utils/types/common.ts
+react-app/src/utils/types/MintableERC20.ts
