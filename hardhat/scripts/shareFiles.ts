@@ -14,21 +14,24 @@ async function shareFiles() {
     const contractJSONPath = join(reactContractsPath, contractJSON);
     const contractType = contractSlug + '.ts';
     const contractTypePath = join(reactContractsTypesPath, contractType);
-    const contractTypeCommon = 'common.ts';
-    const contractTypeCommonPath = join(reactContractsTypesPath, contractTypeCommon);
     const artifact = artifacts.readArtifactSync(contractSlug);
     if (!existsSync(reactContractsPath)) {
       mkdirSync(reactContractsPath, { recursive: true });
     }
     writeFileSync(contractJSONPath, JSON.stringify(artifact, null, 2));
     const typeData = readFileSync(join(hardhatContractsTypePath, contractType), 'utf8');
-    const typeCommonData = readFileSync(join(hardhatContractsTypePath, contractTypeCommon), 'utf8');
     if (!existsSync(reactContractsTypesPath)) {
       mkdirSync(reactContractsTypesPath, { recursive: true });
     }
     writeFileSync(contractTypePath, typeData);
-    writeFileSync(contractTypeCommonPath, typeCommonData);
   });
+  const contractTypeCommon = 'common.ts';
+  const contractTypeCommonPath = join(reactContractsTypesPath, contractTypeCommon);
+  const typeCommonData = readFileSync(join(hardhatContractsTypePath, contractTypeCommon), 'utf8');
+  if (!existsSync(reactContractsTypesPath)) {
+    mkdirSync(reactContractsTypesPath, { recursive: true });
+  }
+  writeFileSync(contractTypeCommonPath, typeCommonData);
   return {
     contractsNum: contractsList.length,
     reactContractsPath: reactContractsPath,
