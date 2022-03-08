@@ -10,7 +10,7 @@ The purpose is to understand the end-to-end process of coding a smart contract i
 
 ## Technical details
 
-I use [npm 7 workspaces](https://docs.npmjs.com/cli/v7/using-npm/workspaces "npm 7 workspaces") to create a monorepo in order to simplify the development stack.
+I use [npm 7 workspaces](https://docs.npmjs.com/cli/v7/using-npm/workspaces "npm 7 workspaces") to create a monorepo in order to simplify the development environment.
 
 - **Contracts**: [Hardhat](https://hardhat.org)
 - **Front-end**: [React.js](https://reactjs.org)
