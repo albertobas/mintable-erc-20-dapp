@@ -4,21 +4,23 @@
 
 ## About
 
-This project consists of a decentralized application to operate with a mintable ERC20 token.
+This repository consists of a decentralized application to operate with a mintable ERC20 token.
 
-The purpose is then to understand the end-to-end process of coding a smart contract in Solidity and developing a specific front-end to interact with this contract.
-
-I use [npm 7 workspaces](https://docs.npmjs.com/cli/v7/using-npm/workspaces "npm 7 workspaces") to create a monorepo in order to simplify the development stack which consists of Hardhat and React.js.
+The purpose is to understand the end-to-end process of coding a smart contract in Solidity and developing a specific front-end to interact with this contract.
 
 ## Technical details
 
+I use [npm 7 workspaces](https://docs.npmjs.com/cli/v7/using-npm/workspaces "npm 7 workspaces") to create a monorepo in order to simplify the development stack.
+
 - **Contracts**: [Hardhat](https://hardhat.org)
 - **Front-end**: [React.js](https://reactjs.org)
+- **Ethereum interaction**: [Ethers.js](https://docs.ethers.io/)
+- **Styling**: [Chakra UI](https://chakra-ui.com)
 
 ## Overview
 
 - `hardhat/contracts/*`: smart contract written in Solidity language.
-- `hardhat/scripts/*`: Typescript files to deploy contracts, and to share files from the contracts workspace to the React app workspace.
+- `hardhat/scripts/*`: Typescript files to deploy contracts, and to share files from the Hardhat workspace to the React app workspace.
 - `hardhat/tasks/*`: Hardhat task to mint a prespecified amount of tokens and send them to a scpecified address.
 - `hardhat/test/*`: Typescript file using a [hardhat plugin for integration with Waffle](https://hardhat.org/plugins/nomiclabs-hardhat-waffle.html) to write the required tests with [mocha](https://mochajs.org/) alongside [chai](https://www.chaijs.com/).
 - `react-app/public/*`: `index.html`, `manifest.json` and `robots.txt`.
