@@ -11,7 +11,10 @@ export const useAccountAndChainChange = () => {
       window.ethereum.on('accountsChanged', handleAccountsChanged);
       window.ethereum.on('chainChanged', handleAccountsChanged);
     }
-    return () => window.ethereum.removeListener('accountsChanged', handleAccountsChanged);
+    return () => {
+      window.ethereum.removeListener('accountsChanged', handleAccountsChanged);
+      window.ethereum.removeListener('chainChanged', handleAccountsChanged);
+    };
   }, []);
 };
 
