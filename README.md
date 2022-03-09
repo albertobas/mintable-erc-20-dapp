@@ -40,3 +40,7 @@ $ npm run mint --receiver 0x...
 ```
 
 `0x...` stands for the address of the receiver account
+
+## Notes
+
+I have written a [blog post](https://www.albertobas.com/blog/mintable-erc20-dapp) about the end-to-end process of developing this application.
