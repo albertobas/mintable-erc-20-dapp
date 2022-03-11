@@ -3,17 +3,17 @@ import { BigNumber, Event, EventFilter } from 'ethers';
 import { useCallback, useEffect, useState } from 'react';
 
 export const useAccountAndChainChange = () => {
-  const handleAccountsChanged = () => {
+  const handleChange = () => {
     window.location.reload();
   };
   useEffect(() => {
     if (window.ethereum) {
-      window.ethereum.on('accountsChanged', handleAccountsChanged);
-      window.ethereum.on('chainChanged', handleAccountsChanged);
+      window.ethereum.on('accountsChanged', handleChange);
+      window.ethereum.on('chainChanged', handleChange);
     }
     return () => {
-      window.ethereum.removeListener('accountsChanged', handleAccountsChanged);
-      window.ethereum.removeListener('chainChanged', handleAccountsChanged);
+      window.ethereum.removeListener('accountsChanged', handleChange);
+      window.ethereum.removeListener('chainChanged', handleChange);
     };
   }, []);
 };
