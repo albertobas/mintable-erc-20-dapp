@@ -1,10 +1,10 @@
-# ERC20 token specific dapp
+# ERC-20 token specific dapp
 
-[![Apache 2.0 licensed](https://img.shields.io/badge/License-Apache_2.0-yellow.svg)](https://github.com/albertobas/mintable-erc20-dapp/blob/main/LICENSE)
+[![Apache 2.0 licensed](https://img.shields.io/badge/License-Apache_2.0-yellow.svg)](https://github.com/albertobas/mintable-erc-20-dapp/blob/main/LICENSE)
 
 ## About
 
-This repository consists of a decentralized application to operate with a mintable ERC20 token.
+This repository consists of a decentralized application to operate with a mintable ERC-20 token.
 
 The purpose is to understand the end-to-end process of coding a smart contract in Solidity and developing a specific front-end to interact with this contract.
 
@@ -30,8 +30,8 @@ I use [npm 7 workspaces](https://docs.npmjs.com/cli/v7/using-npm/workspaces "npm
 ## Running locally
 
 ```bash
-$ git clone https://github.com/albertobas/mintable-erc20-dapp.git
-$ cd mintable-erc20-dapp
+$ git clone https://github.com/albertobas/mintable-erc-20-dapp.git
+$ cd mintable-erc-20-dapp
 $ npm i
 $ npm run node
 $ npm run compile-share-deploy
@@ -43,4 +43,4 @@ $ npm run mint --receiver 0x...
 
 ## Notes
 
-I have written a [blog post](https://www.albertobas.com/blog/mintable-erc20-dapp) about the end-to-end process of developing this application.
+I have written a [blog post](https://www.albertobas.com/blog/mintable-erc-20-dapp) about the end-to-end process of developing this application.
