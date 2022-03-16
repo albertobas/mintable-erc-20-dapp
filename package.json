@@ -1,5 +1,5 @@
 {
-	"name": "mintable-erc20-dapp",
+	"name": "mintable-erc-20-dapp",
 	"version": "1.0.0",
 	"pricate": true,
 	"description": "",
@@ -16,14 +16,14 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/albertobas/mintable-erc20-dapp.git"
+		"url": "git+https://github.com/albertobas/mintable-erc-20-dapp.git"
 	},
 	"keywords": [],
 	"author": "",
 	"bugs": {
-		"url": "https://github.com/albertobas/mintable-erc20-dapp/issues"
+		"url": "https://github.com/albertobas/mintable-erc-20-dapp/issues"
 	},
-	"homepage": "https://github.com/albertobas/mintable-erc20-dapp#readme",
+	"homepage": "https://github.com/albertobas/mintable-erc-20-dapp#readme",
 	"workspaces": [
 		"hardhat",
 		"react-app"
