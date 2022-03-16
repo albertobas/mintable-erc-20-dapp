@@ -31,8 +31,8 @@ task('mint', 'Mint TFT and internally transfer it to an address')
     }
     const token = await hre.ethers.getContractAt('MintableERC20', address);
 
-    const amount = '1000000';
-    const tftAmount = hre.ethers.utils.parseUnits(amount);
+    const amount = '100';
+    const tftAmount = hre.ethers.utils.parseUnits(amount, 18);
     const tx = await token.mint(receiver, tftAmount);
     await tx.wait();
 
