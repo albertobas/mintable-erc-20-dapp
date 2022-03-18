@@ -1,7 +1,7 @@
 {
 	"name": "mintable-erc-20-dapp",
 	"version": "1.0.0",
-	"pricate": true,
+	"private": true,
 	"description": "",
 	"scripts": {
 		"node": "npm run node --workspace=hardhat",
