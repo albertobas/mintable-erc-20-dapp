@@ -15,8 +15,8 @@ task('mint', 'Mint TFT and internally transfer it to an address')
     if (receiver === undefined) {
       console.warn('A recieiver address is required');
     }
-    const addressesFilePath = join(__dirname, '../../react-app/src/utils/contracts/contracts-addresses.json');
 
+    const addressesFilePath = join(__dirname, '../../react-app/src/utils/contracts/contracts-addresses.json');
     if (!existsSync(addressesFilePath)) {
       console.error('You need to deploy your contract first');
       return;
@@ -24,13 +24,13 @@ task('mint', 'Mint TFT and internally transfer it to an address')
 
     const addressesJson = readFileSync(addressesFilePath, 'utf-8');
     const address: string = JSON.parse(addressesJson)['MintableERC20'];
-
-    if ((await hre.ethers.provider.getCode(address)) === '0x') {
+    const code = await hre.ethers.provider.getCode(address);
+    if (code === '0x') {
       console.error('You need to deploy your contract first');
       return;
     }
-    const token = await hre.ethers.getContractAt('MintableERC20', address);
 
+    const token = await hre.ethers.getContractAt('MintableERC20', address);
     const amount = '100';
     const tftAmount = hre.ethers.utils.parseUnits(amount, 18);
     const tx = await token.mint(receiver, tftAmount);
