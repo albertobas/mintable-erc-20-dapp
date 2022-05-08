@@ -1,4 +1,4 @@
-# ERC-20 token specific dapp
+# ERC-20 token-specific dapp
 
 [![Apache 2.0 licensed](https://img.shields.io/badge/License-Apache_2.0-yellow.svg)](https://github.com/albertobas/mintable-erc-20-dapp/blob/main/LICENSE)
 
