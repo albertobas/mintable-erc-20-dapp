@@ -32,4 +32,5 @@ module.exports = {
       },
     },
   ],
+  ignorePatterns: ['node_modules', 'cache', 'artifacts', 'typechain-types'],
 };

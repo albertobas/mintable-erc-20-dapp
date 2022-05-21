@@ -2,13 +2,14 @@ node_modules
 .env
 coverage
 coverage.json
-typechain-types
 /.pnp
 .pnp.js
+build
 
 #Hardhat files
 cache
 artifacts
+typechain-types
 
 # production
 /build
