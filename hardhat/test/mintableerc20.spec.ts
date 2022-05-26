@@ -19,7 +19,7 @@ describe('TFT', function () {
     await tft.deployed();
   });
   describe('Error handling', () => {
-    it('Shoud revert unouthorized minter', async () => {
+    it('Shoud revert unauthorized minter', async () => {
       const amount = ethers.utils.parseUnits('1000', 'ether');
       await expect(tft.connect(acc2).mint(acc3.address, amount)).to.be.revertedWith(
         'Only the owner is authorized to mint tokens'
