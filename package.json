@@ -4,10 +4,10 @@
 	"private": true,
 	"description": "",
 	"scripts": {
-		"node": "npm run node --workspace=hardhat",
-		"test-hardhat": "npm run test --workspace=hardhat",
-		"compile-share-deploy": "npm run compile --workspace=hardhat && npm run share --workspace=hardhat && npm run deploy --workspace=hardhat",
-		"mint": "npm run mint --workspace=hardhat",
+		"node": "npm run node --workspace=hardhat-env",
+		"test-hardhat": "npm run test --workspace=hardhat-env",
+		"compile-share-deploy": "npm run compile --workspace=hardhat-env && npm run share --workspace=hardhat-env && npm run deploy --workspace=hardhat-env",
+		"mint": "npm run mint --workspace=hardhat-env",
 		"start-app": "npm start --workspace=react-app",
 		"test-app": "npm run test --workspace=react-app",
 		"type-check": "npm run type-check --workspaces",
@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://github.com/albertobas/mintable-erc-20-dapp#readme",
 	"workspaces": [
-		"hardhat",
+		"hardhat-env",
 		"react-app"
 	]
 }
