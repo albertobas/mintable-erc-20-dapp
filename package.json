@@ -2,7 +2,8 @@
 	"name": "mintable-erc-20-dapp",
 	"version": "1.0.0",
 	"private": true,
-	"description": "",
+	"license": "Apache-2.0",
+	"description": "This mono repository consists of a decentralized application to operate with a mintable ERC-20 token.",
 	"scripts": {
 		"node": "npm run node --workspace=hardhat-env",
 		"test-hardhat": "npm run test --workspace=hardhat-env",
