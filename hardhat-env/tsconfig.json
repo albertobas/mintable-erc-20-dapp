@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "outDir": "dist",
     "resolveJsonModule": true,
-    "typeRoots": ["./typechain", "./node_modules/@types"],
+    "typeRoots": ["./typechain-types", "/node_modules/@types"],
     "types": ["@nomiclabs/hardhat-ethers", "@nomiclabs/hardhat-waffle"]
   },
   "include": ["./test", "./scripts", "./tasks", "./typechain-types"],
