@@ -14,7 +14,7 @@ async function main() {
   const MintableERC20Factory = await hre.ethers.getContractFactory(contractName);
   const tft = await MintableERC20Factory.deploy('Test Fungible Token', 'TFT');
   await tft.deployed();
-  console.log(`  ✓ ${contractName} deployed to: ${tft.address}`);
+  console.log(`  ✓ ${contractName} deployed at: ${tft.address}`);
 
   const reactContractsPath = join(__dirname, '../../react-app/src/utils/contracts');
   const reactContractsAddressPath = join(__dirname, '../../react-app/src/utils/contracts/contracts-addresses.json');
