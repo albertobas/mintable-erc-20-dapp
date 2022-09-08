@@ -1,9 +1,8 @@
-const hre = require('hardhat');
 import { existsSync, mkdirSync, writeFileSync } from 'fs';
-import { network } from 'hardhat';
+import { ethers, network } from 'hardhat';
 import { join } from 'path';
 
-async function main() {
+async function main(): Promise<void> {
   if (network.name === 'hardhat') {
     console.warn(
       'The contract has been deployed to the Hardhat Network, so it got automatically created ' +
@@ -11,7 +10,7 @@ async function main() {
     );
   }
   const contractName = 'MintableERC20';
-  const MintableERC20Factory = await hre.ethers.getContractFactory(contractName);
+  const MintableERC20Factory = await ethers.getContractFactory(contractName);
   const tft = await MintableERC20Factory.deploy('Test Fungible Token', 'TFT');
   await tft.deployed();
   console.log(`  ✓ ${contractName} deployed at: ${tft.address}`);
@@ -27,7 +26,6 @@ async function main() {
   if (!existsSync(reactContractsPath)) {
     mkdirSync(reactContractsPath, { recursive: true });
   }
-  //mkDir(reactContractsPath);
   writeFileSync(reactContractsAddressPath, JSON.stringify(addresses, undefined, 2));
   console.log(`  ✓ ${pairs.length} contract address(es) has(have) been copied to ${reactContractsPath}`);
 }
