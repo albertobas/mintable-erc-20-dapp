@@ -41,7 +41,7 @@ async function shareFiles() {
 
 shareFiles()
   .then(({ contractsNum, reactContractsPath, reactContractsTypesPath }) => {
-    console.log(`  ✓ ${contractsNum} contract(s) copied to ${reactContractsPath}`);
+    console.log(`  ✓ ${contractsNum} compiled artifact(s) copied to ${reactContractsPath}`);
     console.log(`  ✓ ${contractsNum} contract(s) type(s) copied to ${reactContractsTypesPath}`);
     console.log(`  ✓ Contract type required module common.ts copied to ${reactContractsTypesPath}`);
     process.exit(0);
