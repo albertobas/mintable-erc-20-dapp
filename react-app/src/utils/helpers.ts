@@ -5,7 +5,7 @@ import { MintableERC20 } from 'utils/types/MintableERC20';
 
 const addresses = require('./contracts/contracts-addresses.json');
 
-export const isEthereum = window.ethereum !== undefined ? true : false;
+const isEthereum = typeof window.ethereum !== 'undefined';
 
 export const fetchData = async () => {
   const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
