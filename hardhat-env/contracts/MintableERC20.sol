@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0
-pragma solidity ^0.8.4;
+pragma solidity 0.8.4;
 
 contract MintableERC20 {
     string public name;
@@ -37,11 +37,7 @@ contract MintableERC20 {
         return true;
     }
 
-    function _approve(
-        address owner,
-        address spender,
-        uint256 amount
-    ) public returns (bool) {
+    function _approve(address owner, address spender, uint256 amount) public returns (bool) {
         require(owner != address(0), 'Transfer from zero address is not permitted');
         require(spender != address(0), 'Transfer to zero address is not permitted');
         _allowances[owner][spender] = amount;
@@ -58,11 +54,7 @@ contract MintableERC20 {
         return true;
     }
 
-    function transferFrom(
-        address sender,
-        address receiver,
-        uint256 amount
-    ) public returns (bool) {
+    function transferFrom(address sender, address receiver, uint256 amount) public returns (bool) {
         _transfer(sender, receiver, amount);
         uint256 _allowance = _allowances[sender][msg.sender];
         require(_allowance >= amount, 'There is no allowance to transfer this amount');
@@ -70,11 +62,7 @@ contract MintableERC20 {
         return true;
     }
 
-    function _transfer(
-        address sender,
-        address receiver,
-        uint256 amount
-    ) internal {
+    function _transfer(address sender, address receiver, uint256 amount) internal {
         require(sender != address(0), 'Transfer from zero address is not permitted');
         require(receiver != address(0), 'Transfer to zero address is not permitted');
         if (amount > balanceOf(sender))
